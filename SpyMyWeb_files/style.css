@@ -1,0 +1,182 @@
+/*
+Theme Name: Grid Theme Responsive
+Theme URI: http://www.dessign.net/gridthemeresponsive
+Description: Grid Theme Responsive for WordPress is stylish, customizable, simple, and readable. Perfect for any illustrator or graphic designer. 
+Version: 2.5
+Author: Marios Lublinski
+Author URI: http://www.dessign.net
+Tags: 4 column theme, white, clean
+
+*/
+
+/* Global */
+* { margin: 0; padding: 0; }
+body { font-size: 12px; font-family: verdana, arial, georgia; color: #333333;  }
+#main_container { width: 100%; margin: 0 auto; }
+h1,h2,h3,h4,h5,p { margin: 10px 0; }
+.left { float: left;}
+.right { float: right; }
+.clear { clear: both; }
+img { border: none; }
+a { color: #666; text-decoration: none; }
+a:hover { color:#333; }
+
+/* Header */
+/*#header { padding: 10px 0 30px; }*/
+#menu_container { position:fixed; top:65px;z-index:15;width:100%;text-align: center;
+vertical-align: middle;
+line-height: 10px; 
+left:40px;
+}
+#menu_container ul { list-style-type: none; margin-right: 25px; float: left; font:bolder;font-size:15px; text-shadow: 0px 2px 3px #086418; }
+#menu_container ul li { float: left; }
+#menu_container ul li a { color: #fff; text-decoration: none; background-color: transparent; padding: 6px 5px; margin-right: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; display: block;height:10px; }
+#menu_container ul li a:hover { background-color: #086418; }
+#menu_container ul li.current-menu-item a, #menu_container ul li.current_page_item a { background-color: #086418; }
+#busca input[type=text] { width: 172px; height: 25px; background-color: #FFF; color: #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; border: none; padding: 0 5px; top: 25px; left:40%; position:fixed; z-index:30; }
+
+.header_social_icons_cont { z-index:1; padding-left:60px; padding-top:20px;}
+.header_social_icons_cont img { float: left; margin-right: 7px;z-index:1;  }
+
+/* Content */
+.home_post_cont { float: left; margin-right: 34px; width: 228px; min-height: 331px; margin-bottom: 35px; top:90px; position: relative;z-index:1; }
+.home_post_cont_404 {  margin-bottom: 35px; top:90px; position: relative;z-index:1; }
+.home_post_cont_last { margin-right: 0; }
+.home_post_cont img { width: 228px; height: 331px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
+.home_post_cont h3 { font-size: 8px; }
+.home_post_cont h3 a { color: #000; text-decoration: none; }
+.home_post_cont h3 a:hover {  text-decoration: none; color: #666; }
+
+.home_post_content { color: #A0A0A0; font-size: 8px; padding-right: 30px; font-weight: normal; height: 270px; }
+.home_post_content .in_title { color: #fff; font-size: 8px; margin: 0; font-weight: bold; }
+.home_post_content h4 a { color: #fff; font-size: 12px; margin: 0; }
+/*.home_post_cat { position: absolute; bottom: -20px; left: 10px; color: #A0A0A0; font-size: 10px; font-weight: normal; padding-right: 40px; }*/
+.home_post_cat { color: #A0A0A0; font-size: 10px; font-weight: normal; padding-right: 40px; }
+.home_post_cat a { color: #A0A0A0 !important; text-decoration: none; }
+.home_post_cat a:hover {  text-decoration: none; color: #666; }
+
+.single_left { width: 665px;margin-top:90px;margin-left:10%; }
+.single_left h1 { font-size: 13px; margin-top: 0; }
+
+    .hover_caption {
+      /* If you can count of CSS3 support: */
+      background-color: /*rgba(0, 0, 0, 0.7)*/ #000; -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+  
+      /* Or use a transparent image if you need to support bad browsers: */
+      /*background-image: url(images/hover_caption_bg.png);*/
+  
+      /* NOTE: If you're img elements have paddings or margins you'll need to
+      match them here to get things lined up properly. */
+    }
+  
+#commentform input[type=submit] { background-color: #000; border: none; color: #fff; padding: 8px 10px; }
+#commentform a { color: #000; }
+
+.commentlist a { color: #000; }    
+.iphone-home-image { width: 300px !important; }
+
+/* Sidebar */
+#sidebar { float: right; width: 270px;margin-top:90px; }
+.side_box { margin-bottom: 25px; }
+.side_box h3 { padding: 5px 5px; background-color: #000; margin-top: 0; color: #fff; }
+.side_box p { padding: 0px 5px; }
+.side_box ul { list-style-type: none; margin-left: 5px; }
+.side_box ul li { margin-bottom: 3px; }
+.textwidget { padding: 5px; }
+
+/* Footer */
+#footer { margin: 25px 0; padding: 12px 0; border-top: 1px solid #CBCBCB; border-bottom: 1px solid #CBCBCB; color: #8C8889; text-align: center; }
+#footer a { color: #8C8889; text-decoration: none; }
+#footer a:hover { text-decoration: underline; }
+
+
+#infscr-loading { text-align: center; }
+
+
+@media screen and (max-width: 480px) {
+
+#main_container { width: 320px; }
+#menu_container { display: none; }
+.home_post_cont { margin-right: auto; margin-left: auto; float: none; clear: both; }
+#footer { display: none; }
+#commentform textarea { width: 220px; }
+#sidebar { display: none; }
+.single_left { float: none; width: 228px; margin-left: 10%; margin-right: auto; }
+.single_left img { width: 228px; height:inherit; }
+
+}
+
+
+
+.header {
+    width:100%;
+    position:fixed;
+	z-index:3;
+	top:1px;
+	height:94px;
+	background-image: url(header_bg.png);
+	background-repeat:repeat-x;
+}
+.header_menu {
+	width:100%;
+	height:70px;
+	position:fixed;
+   left: 80%;
+	z-index:5;
+}
+
+.logo{
+	width:260;
+	height:75px;
+	position:fixed;
+	top:2px;
+	padding-left:0px;
+	z-index:6;
+	background-image:url(logo.png);
+}
+
+.subheader {
+	width:100%;
+	margin:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+	height:40px;
+	position:fixed;
+	
+	background:no-repeat;
+	top:63px;
+	background-image: url(subheader.png);
+	background-position:center;
+	z-index:2;
+
+}
+
+.col_dir{
+	position:fixed;
+	vertical-align:central;
+	background-color:#F0F0F0;
+	right:0px;
+	top: 60px;
+	width:250px;
+	height:100%;
+	z-index:-1;
+}
+.col_dir_content{
+	position:fixed;
+	vertical-align:central;
+	right:0px;
+	top: 60px;
+	width:250px;
+	height:100%;
+	z-index:10;
+}
+.postsrelacionados{
+	background-color:#000;
+	font:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font:bold;
+	font-size:18px;
+	color:#FFF;
+	width:250px;
+	height:25px;
+	z-index:11;	
+}
