@@ -9,5 +9,5 @@ Pay attention to "config.cfg" file, you need to setup the website IP and Port, a
 -> Explanations
 -"packetExtractor.py": Read "pacotes.txt" file (packets) and extract only packet related to images, and using Full Request URI field the image is downloaded by urllib module. After each download, the image is opened and sent attached with a POST header.
 
--"servidorWeb Logs.py": Wait for GET or POST requisitions. In POST, the received image is written with your original name of url. Homepage is update after each new image received, and a logfile is created showing how works receiving packets process.
+-"LOG webserver.py": Wait for GET or POST requisitions. In POST, the received image is written with your original name of url. Homepage is update after each new image received, and a logfile is created showing how works receiving packets process.
 
