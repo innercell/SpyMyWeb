@@ -1,5 +1,5 @@
-#Antonio Gean Rodrigues, Thiago Oliveira Cabral, Tiago Roberti Sampaio 
-#201111722003, 201011722035, 201011722037
+# Tiago R. Sampaio
+# http://www.trsampaio.com
 
 import urllib
 import socket
