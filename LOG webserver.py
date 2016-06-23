@@ -1,5 +1,4 @@
 #Antonio Gean Rodrigues, Thiago Oliveira Cabral, Tiago Roberti Sampaio 
-#201111722003, 201011722035, 201011722037
 
 import socket, signal , threading as t, re, sys, os
 from datetime import date
